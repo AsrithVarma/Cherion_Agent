@@ -1,4 +1,4 @@
-# Cheiron
+# Cheiron_Agent:
 
 Cheiron turns a natural-language question about clinical trials into a **structured
 visualization specification**, computed from live [ClinicalTrials.gov](https://clinicaltrials.gov/data-api/api)
