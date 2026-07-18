@@ -1,0 +1,110 @@
+{
+  "studies": [
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT90000001",
+          "briefTitle": "A Study With No Reported Enrollment"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "startDateStruct": {
+            "date": "2023-06-15"
+          }
+        },
+        "designModule": {
+          "phases": ["PHASE2"]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "type": "DRUG",
+              "name": "Investigational Compound A"
+            }
+          ]
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Example Medical Center",
+            "class": "OTHER"
+          }
+        },
+        "conditionsModule": {
+          "conditions": ["Melanoma"]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT90000002",
+          "briefTitle": "A Study With an Empty Interventions Array"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "startDateStruct": {
+            "date": "2021-11-01"
+          }
+        },
+        "designModule": {
+          "phases": ["PHASE3"],
+          "enrollmentInfo": {
+            "count": 240,
+            "type": "ACTUAL"
+          }
+        },
+        "armsInterventionsModule": {
+          "interventions": []
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Global Pharma Inc",
+            "class": "INDUSTRY"
+          }
+        },
+        "conditionsModule": {
+          "conditions": ["Melanoma", "Skin Cancer"]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT90000003",
+          "briefTitle": "A Study With a Month-Only Start Date"
+        },
+        "statusModule": {
+          "overallStatus": "ACTIVE_NOT_RECRUITING",
+          "startDateStruct": {
+            "date": "January 2024"
+          }
+        },
+        "designModule": {
+          "phases": ["PHASE1"],
+          "enrollmentInfo": {
+            "count": 45,
+            "type": "ESTIMATED"
+          }
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "type": "BIOLOGICAL",
+              "name": "Experimental Vaccine B"
+            }
+          ]
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "University Research Consortium",
+            "class": "OTHER"
+          }
+        },
+        "conditionsModule": {
+          "conditions": ["Melanoma"]
+        }
+      }
+    }
+  ],
+  "totalCount": 3
+}

@@ -1,0 +1,268 @@
+{
+  "studies": [
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05185739",
+          "briefTitle": "Perioperative Pembrolizumab and Lenvatinib in Resectable Hepatocellular Carcinoma (HCC)"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03924856",
+          "briefTitle": "Perioperative Pembrolizumab (MK-3475) Plus Neoadjuvant Chemotherapy Versus Perioperative Placebo Plus Neoadjuvant Chemotherapy for Cisplatin-eligible Muscle-invasive Bladder Cancer (MIBC) (MK-3475-866/KEYNOTE-866)"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE3"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05879653",
+          "briefTitle": "Pembrolizumab and EV With Radiation Therapy for MIBC Patients (PEVRAD)"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06788912",
+          "briefTitle": "Pembrolizumab (MK-3475) Plus Investigational Agents in Resectable Non-small Cell Lung Cancer (NSCLC) (MK-3475-01E/KEYMAKER-U01)"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02680184",
+          "briefTitle": "Clinical Study of CMP-001 in Combination With Pembrolizumab or as a Monotherapy"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT07015333",
+          "briefTitle": "Case Review of Patients With Betel Nut-induced Oral Cancer Treated With Pembrolizumab and Cetuximab"
+        },
+        "designModule": {}
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05655663",
+          "briefTitle": "Evaluation of Vascular Toxicity of Immune Checkpoint Inhibitors in Patients Head and Neck or Lung Cancer"
+        },
+        "designModule": {
+          "phases": [
+            "NA"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04193293",
+          "briefTitle": "A Study of Duvelisib in Combination With Pembrolizumab in Head and Neck Cancer"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06712316",
+          "briefTitle": "Safety, Efficacy, and Pharmacokinetics of BNT327 in Combination With Chemotherapy and Other Investigational Agents for Lung Cancer"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2",
+            "PHASE3"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02851004",
+          "briefTitle": "Special Combination of BBI608 and Pembrolizumab"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04282044",
+          "briefTitle": "Study of CRX100 as Monotherapy and in Combination With Pembrolizumab in Patients With Advanced Solid Malignancies"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03056599",
+          "briefTitle": "Precise Local Injection of Anti-cancer Drugs Using Presage's CIVO Device in Soft Tissue Sarcoma"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05741164",
+          "briefTitle": "Propranolol and Pembrolizumab for Tumor Re-sensitization and Treatment of Patients With Checkpoint Inhibitor Refractory Metastatic or Unresectable Triple Negative Breast Cancer"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05205109",
+          "briefTitle": "A Study to Assess the Safety, Pharmacokinetics, Pharmacodynamics, and Preliminary Efficacy of ATG 037 Monotherapy and Combination Therapy With Pembrolizumab in Patients With Advanced Solid Tumors"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02784171",
+          "briefTitle": "Pembrolizumab in Patients With Advanced Malignant Pleural Mesothelioma"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2",
+            "PHASE3"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02662062",
+          "briefTitle": "Pembrolizumab With Chemoradiotherapy as Treatment for Muscle Invasive Bladder Cancer"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06358573",
+          "briefTitle": "Intratumoral INT230-6 Followed by Neoadjuvant Immuno-chemotherapy in Patients With Early TNBC. INVINCIBLE-4-SAKK"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02129556",
+          "briefTitle": "Anti-PD-1 Monoclonal Antibody in Advanced, Trastuzumab-resistant, HER2-positive Breast Cancer"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT07662720",
+          "briefTitle": "A Phase II Trial for MOR Antagonism With Axelopran to Enhance Immunotherapy in Head and Neck Cancer"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03338959",
+          "briefTitle": "Pembrolizumab and Radiation Therapy in Treating Patients With Intermediate or High-Grade Soft Tissue Sarcoma"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        }
+      }
+    }
+  ],
+  "nextPageToken": "ZVNj7o2Elu8o3lp3U8mh5unumpOQJJxpZ_Wi2vg"
+}

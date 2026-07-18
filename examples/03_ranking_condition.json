@@ -1,0 +1,657 @@
+{
+  "request": {
+    "query": "What are the most common conditions studied by Pfizer?",
+    "sponsor": "Pfizer"
+  },
+  "status": 200,
+  "response": {
+    "visualization": {
+      "type": "bar_chart",
+      "title": "What are the most common conditions studied by Pfizer?",
+      "encoding": {
+        "x": "condition",
+        "y": "trial_count"
+      },
+      "data": [
+        {
+          "phase": null,
+          "trial_count": 491,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT03597217",
+              "field": "Condition",
+              "excerpt": "Healthy"
+            },
+            {
+              "nct_id": "NCT01756768",
+              "field": "Condition",
+              "excerpt": "Healthy"
+            },
+            {
+              "nct_id": "NCT02537002",
+              "field": "Condition",
+              "excerpt": "Healthy"
+            },
+            {
+              "nct_id": "NCT00939731",
+              "field": "Condition",
+              "excerpt": "Healthy"
+            },
+            {
+              "nct_id": "NCT02070939",
+              "field": "Condition",
+              "excerpt": "Healthy"
+            }
+          ],
+          "citation_count": 491,
+          "condition": "Healthy"
+        },
+        {
+          "phase": null,
+          "trial_count": 127,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT04018001",
+              "field": "Condition",
+              "excerpt": "Rheumatoid Arthritis"
+            },
+            {
+              "nct_id": "NCT05576051",
+              "field": "Condition",
+              "excerpt": "Rheumatoid Arthritis"
+            },
+            {
+              "nct_id": "NCT01359150",
+              "field": "Condition",
+              "excerpt": "Rheumatoid Arthritis"
+            },
+            {
+              "nct_id": "NCT01059864",
+              "field": "Condition",
+              "excerpt": "Rheumatoid Arthritis"
+            },
+            {
+              "nct_id": "NCT00141830",
+              "field": "Condition",
+              "excerpt": "Rheumatoid Arthritis"
+            }
+          ],
+          "citation_count": 127,
+          "condition": "Rheumatoid Arthritis"
+        },
+        {
+          "phase": null,
+          "trial_count": 124,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT05549505",
+              "field": "Condition",
+              "excerpt": "Breast Cancer"
+            },
+            {
+              "nct_id": "NCT02929576",
+              "field": "Condition",
+              "excerpt": "Breast Cancer"
+            },
+            {
+              "nct_id": "NCT02296801",
+              "field": "Condition",
+              "excerpt": "Breast Cancer"
+            },
+            {
+              "nct_id": "NCT04460898",
+              "field": "Condition",
+              "excerpt": "Breast Cancer"
+            },
+            {
+              "nct_id": "NCT05584644",
+              "field": "Condition",
+              "excerpt": "Breast Cancer"
+            }
+          ],
+          "citation_count": 124,
+          "condition": "Breast Cancer"
+        },
+        {
+          "phase": null,
+          "trial_count": 110,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT01796327",
+              "field": "Condition",
+              "excerpt": "Healthy Volunteers"
+            },
+            {
+              "nct_id": "NCT00784420",
+              "field": "Condition",
+              "excerpt": "Healthy Volunteers"
+            },
+            {
+              "nct_id": "NCT00668967",
+              "field": "Condition",
+              "excerpt": "Healthy Volunteers"
+            },
+            {
+              "nct_id": "NCT03031119",
+              "field": "Condition",
+              "excerpt": "Healthy Volunteers"
+            },
+            {
+              "nct_id": "NCT00999817",
+              "field": "Condition",
+              "excerpt": "Healthy Volunteers"
+            }
+          ],
+          "citation_count": 110,
+          "condition": "Healthy Volunteers"
+        },
+        {
+          "phase": null,
+          "trial_count": 77,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT00136994",
+              "field": "Condition",
+              "excerpt": "Schizophrenia"
+            },
+            {
+              "nct_id": "NCT00818298",
+              "field": "Condition",
+              "excerpt": "Schizophrenia"
+            },
+            {
+              "nct_id": "NCT00366704",
+              "field": "Condition",
+              "excerpt": "Schizophrenia"
+            },
+            {
+              "nct_id": "NCT00265382",
+              "field": "Condition",
+              "excerpt": "Schizophrenia"
+            },
+            {
+              "nct_id": "NCT01829048",
+              "field": "Condition",
+              "excerpt": "Schizophrenia"
+            }
+          ],
+          "citation_count": 77,
+          "condition": "Schizophrenia"
+        },
+        {
+          "phase": null,
+          "trial_count": 72,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT00649090",
+              "field": "Condition",
+              "excerpt": "Breast Neoplasms"
+            },
+            {
+              "nct_id": "NCT00143390",
+              "field": "Condition",
+              "excerpt": "Breast Neoplasms"
+            },
+            {
+              "nct_id": "NCT02819882",
+              "field": "Condition",
+              "excerpt": "Breast Neoplasms"
+            },
+            {
+              "nct_id": "NCT07174336",
+              "field": "Condition",
+              "excerpt": "Breast Neoplasms"
+            },
+            {
+              "nct_id": "NCT00038467",
+              "field": "Condition",
+              "excerpt": "Breast Neoplasms"
+            }
+          ],
+          "citation_count": 72,
+          "condition": "Breast Neoplasms"
+        },
+        {
+          "phase": null,
+          "trial_count": 68,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT00553605",
+              "field": "Condition",
+              "excerpt": "Pain"
+            },
+            {
+              "nct_id": "NCT00992316",
+              "field": "Condition",
+              "excerpt": "Pain"
+            },
+            {
+              "nct_id": "NCT01062113",
+              "field": "Condition",
+              "excerpt": "Pain"
+            },
+            {
+              "nct_id": "NCT00661635",
+              "field": "Condition",
+              "excerpt": "Pain"
+            },
+            {
+              "nct_id": "NCT01179191",
+              "field": "Condition",
+              "excerpt": "Pain"
+            }
+          ],
+          "citation_count": 68,
+          "condition": "Pain"
+        },
+        {
+          "phase": null,
+          "trial_count": 66,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT00002038",
+              "field": "Condition",
+              "excerpt": "HIV Infections"
+            },
+            {
+              "nct_id": "NCT00002305",
+              "field": "Condition",
+              "excerpt": "HIV Infections"
+            },
+            {
+              "nct_id": "NCT00002082",
+              "field": "Condition",
+              "excerpt": "HIV Infections"
+            },
+            {
+              "nct_id": "NCT00148824",
+              "field": "Condition",
+              "excerpt": "HIV Infections"
+            },
+            {
+              "nct_id": "NCT00264875",
+              "field": "Condition",
+              "excerpt": "HIV Infections"
+            }
+          ],
+          "citation_count": 66,
+          "condition": "HIV Infections"
+        },
+        {
+          "phase": null,
+          "trial_count": 60,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT00147563",
+              "field": "Condition",
+              "excerpt": "Hypertension"
+            },
+            {
+              "nct_id": "NCT00746460",
+              "field": "Condition",
+              "excerpt": "Hypertension"
+            },
+            {
+              "nct_id": "NCT00412113",
+              "field": "Condition",
+              "excerpt": "Hypertension"
+            },
+            {
+              "nct_id": "NCT00374829",
+              "field": "Condition",
+              "excerpt": "Hypertension"
+            },
+            {
+              "nct_id": "NCT01964079",
+              "field": "Condition",
+              "excerpt": "Hypertension"
+            }
+          ],
+          "citation_count": 60,
+          "condition": "Hypertension"
+        },
+        {
+          "phase": null,
+          "trial_count": 58,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT04713553",
+              "field": "Condition",
+              "excerpt": "COVID-19"
+            },
+            {
+              "nct_id": "NCT05780541",
+              "field": "Condition",
+              "excerpt": "COVID-19"
+            },
+            {
+              "nct_id": "NCT04848584",
+              "field": "Condition",
+              "excerpt": "COVID-19"
+            },
+            {
+              "nct_id": "NCT04754594",
+              "field": "Condition",
+              "excerpt": "COVID-19"
+            },
+            {
+              "nct_id": "NCT07222384",
+              "field": "Condition",
+              "excerpt": "COVID-19"
+            }
+          ],
+          "citation_count": 58,
+          "condition": "COVID-19"
+        },
+        {
+          "phase": null,
+          "trial_count": 58,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT01078298",
+              "field": "Condition",
+              "excerpt": "Smoking Cessation"
+            },
+            {
+              "nct_id": "NCT00143286",
+              "field": "Condition",
+              "excerpt": "Smoking Cessation"
+            },
+            {
+              "nct_id": "NCT00808015",
+              "field": "Condition",
+              "excerpt": "Smoking Cessation"
+            },
+            {
+              "nct_id": "NCT00141167",
+              "field": "Condition",
+              "excerpt": "Smoking Cessation"
+            },
+            {
+              "nct_id": "NCT00835900",
+              "field": "Condition",
+              "excerpt": "Smoking Cessation"
+            }
+          ],
+          "citation_count": 58,
+          "condition": "Smoking Cessation"
+        },
+        {
+          "phase": null,
+          "trial_count": 57,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT01617018",
+              "field": "Condition",
+              "excerpt": "Psoriasis"
+            },
+            {
+              "nct_id": "NCT01147874",
+              "field": "Condition",
+              "excerpt": "Psoriasis"
+            },
+            {
+              "nct_id": "NCT00111449",
+              "field": "Condition",
+              "excerpt": "Psoriasis"
+            },
+            {
+              "nct_id": "NCT01300052",
+              "field": "Condition",
+              "excerpt": "Psoriasis"
+            },
+            {
+              "nct_id": "NCT00563524",
+              "field": "Condition",
+              "excerpt": "Psoriasis"
+            }
+          ],
+          "citation_count": 57,
+          "condition": "Psoriasis"
+        },
+        {
+          "phase": null,
+          "trial_count": 56,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT04756531",
+              "field": "Condition",
+              "excerpt": "Healthy Participants"
+            },
+            {
+              "nct_id": "NCT04016077",
+              "field": "Condition",
+              "excerpt": "Healthy Participants"
+            },
+            {
+              "nct_id": "NCT05339334",
+              "field": "Condition",
+              "excerpt": "Healthy Participants"
+            },
+            {
+              "nct_id": "NCT04655040",
+              "field": "Condition",
+              "excerpt": "Healthy Participants"
+            },
+            {
+              "nct_id": "NCT06392230",
+              "field": "Condition",
+              "excerpt": "Healthy Participants"
+            }
+          ],
+          "citation_count": 56,
+          "condition": "Healthy Participants"
+        },
+        {
+          "phase": null,
+          "trial_count": 54,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT01054300",
+              "field": "Condition",
+              "excerpt": "Diabetes Mellitus, Type 2"
+            },
+            {
+              "nct_id": "NCT00139763",
+              "field": "Condition",
+              "excerpt": "Diabetes Mellitus, Type 2"
+            },
+            {
+              "nct_id": "NCT01396161",
+              "field": "Condition",
+              "excerpt": "Diabetes Mellitus, Type 2"
+            },
+            {
+              "nct_id": "NCT00424411",
+              "field": "Condition",
+              "excerpt": "Diabetes Mellitus, Type 2"
+            },
+            {
+              "nct_id": "NCT01469065",
+              "field": "Condition",
+              "excerpt": "Diabetes Mellitus, Type 2"
+            }
+          ],
+          "citation_count": 54,
+          "condition": "Diabetes Mellitus, Type 2"
+        },
+        {
+          "phase": null,
+          "trial_count": 53,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT00151502",
+              "field": "Condition",
+              "excerpt": "Alzheimer's Disease"
+            },
+            {
+              "nct_id": "NCT00931073",
+              "field": "Condition",
+              "excerpt": "Alzheimer's Disease"
+            },
+            {
+              "nct_id": "NCT00827034",
+              "field": "Condition",
+              "excerpt": "Alzheimer's Disease"
+            },
+            {
+              "nct_id": "NCT01066481",
+              "field": "Condition",
+              "excerpt": "Alzheimer's Disease"
+            },
+            {
+              "nct_id": "NCT00959192",
+              "field": "Condition",
+              "excerpt": "Alzheimer's Disease"
+            }
+          ],
+          "citation_count": 53,
+          "condition": "Alzheimer's Disease"
+        }
+      ],
+      "nodes": null,
+      "edges": null
+    },
+    "meta": {
+      "interpretation": {
+        "intent": "ranking",
+        "entities": {
+          "sponsor": "Pfizer"
+        },
+        "group_by": "condition",
+        "measure": "study_count",
+        "ranking": {
+          "top_n": 15
+        },
+        "viz_hint": "horizontal bar chart"
+      },
+      "filters_applied": {
+        "query.spons": "Pfizer"
+      },
+      "source": "ClinicalTrials.gov API v2",
+      "data_timestamp": "2026-07-17T09:00:05",
+      "total_matched": 6053,
+      "truncated": false,
+      "missing_count": 2,
+      "measure": "study_count",
+      "units": "studies",
+      "sorting": {
+        "by": "trial_count",
+        "order": "desc"
+      },
+      "grouping": {
+        "group_by": "condition"
+      },
+      "time_granularity": null,
+      "assumptions": [
+        "2 studies missing 'condition' were grouped as (unknown)."
+      ],
+      "notes": null
+    }
+  }
+}

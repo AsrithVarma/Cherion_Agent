@@ -1,0 +1,300 @@
+{
+  "request": {
+    "query": "How many melanoma trials are there in each phase?"
+  },
+  "status": 200,
+  "response": {
+    "visualization": {
+      "type": "bar_chart",
+      "title": "How many melanoma trials are there in each phase?",
+      "encoding": {
+        "x": "phase",
+        "y": "trial_count"
+      },
+      "data": [
+        {
+          "phase": "PHASE2",
+          "trial_count": 1526,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT01278940",
+              "field": "Phase",
+              "excerpt": "PHASE2"
+            },
+            {
+              "nct_id": "NCT01216696",
+              "field": "Phase",
+              "excerpt": "PHASE2"
+            },
+            {
+              "nct_id": "NCT01970527",
+              "field": "Phase",
+              "excerpt": "PHASE2"
+            },
+            {
+              "nct_id": "NCT00722228",
+              "field": "Phase",
+              "excerpt": "PHASE2"
+            },
+            {
+              "nct_id": "NCT00121420",
+              "field": "Phase",
+              "excerpt": "PHASE2"
+            }
+          ],
+          "citation_count": 1526
+        },
+        {
+          "phase": "PHASE1",
+          "trial_count": 1339,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT01278940",
+              "field": "Phase",
+              "excerpt": "PHASE1"
+            },
+            {
+              "nct_id": "NCT01864759",
+              "field": "Phase",
+              "excerpt": "PHASE1"
+            },
+            {
+              "nct_id": "NCT03092453",
+              "field": "Phase",
+              "excerpt": "PHASE1"
+            },
+            {
+              "nct_id": "NCT00722228",
+              "field": "Phase",
+              "excerpt": "PHASE1"
+            },
+            {
+              "nct_id": "NCT05893654",
+              "field": "Phase",
+              "excerpt": "PHASE1"
+            }
+          ],
+          "citation_count": 1339
+        },
+        {
+          "phase": "NA",
+          "trial_count": 411,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT00685750",
+              "field": "Phase",
+              "excerpt": "NA"
+            },
+            {
+              "nct_id": "NCT03237013",
+              "field": "Phase",
+              "excerpt": "NA"
+            },
+            {
+              "nct_id": "NCT01191294",
+              "field": "Phase",
+              "excerpt": "NA"
+            },
+            {
+              "nct_id": "NCT04670445",
+              "field": "Phase",
+              "excerpt": "NA"
+            },
+            {
+              "nct_id": "NCT07649681",
+              "field": "Phase",
+              "excerpt": "NA"
+            }
+          ],
+          "citation_count": 411
+        },
+        {
+          "phase": "PHASE3",
+          "trial_count": 220,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT00395070",
+              "field": "Phase",
+              "excerpt": "PHASE3"
+            },
+            {
+              "nct_id": "NCT01245062",
+              "field": "Phase",
+              "excerpt": "PHASE3"
+            },
+            {
+              "nct_id": "NCT05549297",
+              "field": "Phase",
+              "excerpt": "PHASE3"
+            },
+            {
+              "nct_id": "NCT01785316",
+              "field": "Phase",
+              "excerpt": "PHASE3"
+            },
+            {
+              "nct_id": "NCT06488482",
+              "field": "Phase",
+              "excerpt": "PHASE3"
+            }
+          ],
+          "citation_count": 220
+        },
+        {
+          "phase": "EARLY_PHASE1",
+          "trial_count": 65,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT05180851",
+              "field": "Phase",
+              "excerpt": "EARLY_PHASE1"
+            },
+            {
+              "nct_id": "NCT01209676",
+              "field": "Phase",
+              "excerpt": "EARLY_PHASE1"
+            },
+            {
+              "nct_id": "NCT00499733",
+              "field": "Phase",
+              "excerpt": "EARLY_PHASE1"
+            },
+            {
+              "nct_id": "NCT03649529",
+              "field": "Phase",
+              "excerpt": "EARLY_PHASE1"
+            },
+            {
+              "nct_id": "NCT03784625",
+              "field": "Phase",
+              "excerpt": "EARLY_PHASE1"
+            }
+          ],
+          "citation_count": 65
+        },
+        {
+          "phase": "PHASE4",
+          "trial_count": 37,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [
+            {
+              "nct_id": "NCT07504796",
+              "field": "Phase",
+              "excerpt": "PHASE4"
+            },
+            {
+              "nct_id": "NCT04320316",
+              "field": "Phase",
+              "excerpt": "PHASE4"
+            },
+            {
+              "nct_id": "NCT00129961",
+              "field": "Phase",
+              "excerpt": "PHASE4"
+            },
+            {
+              "nct_id": "NCT01898585",
+              "field": "Phase",
+              "excerpt": "PHASE4"
+            },
+            {
+              "nct_id": "NCT02685592",
+              "field": "Phase",
+              "excerpt": "PHASE4"
+            }
+          ],
+          "citation_count": 37
+        },
+        {
+          "phase": "(unknown)",
+          "trial_count": 632,
+          "bin": null,
+          "bin_start": null,
+          "bin_end": null,
+          "series": null,
+          "start_year": null,
+          "enrollment_count": null,
+          "nct_id": null,
+          "citations": [],
+          "citation_count": 632
+        }
+      ],
+      "nodes": null,
+      "edges": null
+    },
+    "meta": {
+      "interpretation": {
+        "intent": "distribution",
+        "entities": {
+          "condition": "melanoma"
+        },
+        "group_by": "phase",
+        "measure": "study_count",
+        "viz_hint": "bar chart"
+      },
+      "filters_applied": {
+        "query.cond": "melanoma"
+      },
+      "source": "ClinicalTrials.gov API v2",
+      "data_timestamp": "2026-07-17T09:00:05",
+      "total_matched": 3734,
+      "truncated": false,
+      "missing_count": 632,
+      "measure": "study_count",
+      "units": "studies",
+      "sorting": {
+        "by": "trial_count",
+        "order": "desc"
+      },
+      "grouping": {
+        "group_by": "phase"
+      },
+      "time_granularity": null,
+      "assumptions": [
+        "632 studies missing 'phase' were grouped as (unknown)."
+      ],
+      "notes": null
+    }
+  }
+}

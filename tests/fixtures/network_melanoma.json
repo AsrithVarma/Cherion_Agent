@@ -1,0 +1,79 @@
+{
+  "studies": [
+    {
+      "protocolSection": {
+        "identificationModule": {"nctId": "NCTMEL001", "briefTitle": "Pembro + Nivo in melanoma"},
+        "conditionsModule": {"conditions": ["Melanoma"]},
+        "sponsorCollaboratorsModule": {"leadSponsor": {"name": "Alpha Oncology", "class": "OTHER"}},
+        "armsInterventionsModule": {
+          "interventions": [
+            {"type": "DRUG", "name": "Pembrolizumab"},
+            {"type": "DRUG", "name": "Nivolumab"},
+            {"type": "PROCEDURE", "name": "Tumor Resection"}
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {"nctId": "NCTMEL002", "briefTitle": "Pembro + Ipi in melanoma"},
+        "conditionsModule": {"conditions": ["Melanoma"]},
+        "sponsorCollaboratorsModule": {"leadSponsor": {"name": "Alpha Oncology", "class": "OTHER"}},
+        "armsInterventionsModule": {
+          "interventions": [
+            {"type": "DRUG", "name": "Pembrolizumab"},
+            {"type": "DRUG", "name": "Ipilimumab"}
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {"nctId": "NCTMEL003", "briefTitle": "Nivo + Ipi in melanoma"},
+        "conditionsModule": {"conditions": ["Melanoma"]},
+        "sponsorCollaboratorsModule": {"leadSponsor": {"name": "Beta Pharma", "class": "INDUSTRY"}},
+        "armsInterventionsModule": {
+          "interventions": [
+            {"type": "DRUG", "name": "Nivolumab"},
+            {"type": "DRUG", "name": "Ipilimumab"}
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {"nctId": "NCTMEL004", "briefTitle": "Pembro (listed twice) + Nivo"},
+        "conditionsModule": {"conditions": ["Melanoma"]},
+        "sponsorCollaboratorsModule": {"leadSponsor": {"name": "Beta Pharma", "class": "INDUSTRY"}},
+        "armsInterventionsModule": {
+          "interventions": [
+            {"type": "DRUG", "name": "Pembrolizumab"},
+            {"type": "DRUG", "name": "Pembrolizumab"},
+            {"type": "DRUG", "name": "Nivolumab"}
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {"nctId": "NCTMEL005", "briefTitle": "Melanoma trial with no sponsor block"},
+        "conditionsModule": {"conditions": ["Melanoma"]},
+        "armsInterventionsModule": {
+          "interventions": [
+            {"type": "DRUG", "name": "Pembrolizumab"},
+            {"type": "DRUG", "name": "Nivolumab"}
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {"nctId": "NCTMEL006", "briefTitle": "Melanoma trial with no drugs"},
+        "conditionsModule": {"conditions": ["Melanoma"]},
+        "sponsorCollaboratorsModule": {"leadSponsor": {"name": "Gamma Institute", "class": "OTHER"}},
+        "armsInterventionsModule": {"interventions": []}
+      }
+    }
+  ],
+  "totalCount": 6
+}

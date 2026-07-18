@@ -1,0 +1,452 @@
+{
+  "totalCount": 3734,
+  "studies": [
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01278940",
+          "briefTitle": "Trial of Vaccine Therapy With mRNA- Transfected Dendritic Cells in Patients With Advanced Malignant Melanoma"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2002-03"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 31
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01864759",
+          "briefTitle": "Phase I Endovenous Administration of Oncolytic Adenovirus ICOVIR-5 in Patients With Advanced or Metastatic Melanoma"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2013-01-11"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 14
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01216696",
+          "briefTitle": "Ipilimumab in Patients With Advanced Melanoma and Spontaneous Preexisting Immune Response to NY-ESO-1"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2010-11"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 25
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT07504796",
+          "briefTitle": "ctDNA-guided Addition of Ipilimumab to Patients Receiving Nivolumab and Relatlimab"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2026-04-13"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 90
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01970527",
+          "briefTitle": "Phase II Trial of Stereotactic Body Radiotherapy Followed by Ipilimumab in Treating Patients With Stage IV Melanoma"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2014-03"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 23
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06863870",
+          "briefTitle": "Assessment of Circulating Tumor Cells and microRNAs in Patients With Metastatic Non-cutaneous Melanoma"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2023-05-24"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 35
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03092453",
+          "briefTitle": "Dendritic Cell Vaccination in Patients With Advanced Melanoma"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2017-05-01"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 5
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00722228",
+          "briefTitle": "Autologous and Allogeneic Whole Cell Cancer Vaccine for Metastatic Tumors"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2008-07"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 50
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00685750",
+          "briefTitle": "Expression Analysis of Specific Markers in Non-small Cell Lung Cancer or Melanoma"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2008-04-28"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 88
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03237013",
+          "briefTitle": "Strategies to Promote Skin Health"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2016-02-18"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 219
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00121420",
+          "briefTitle": "Study of Motexafin Gadolinium With Whole Brain Radiation Therapy Followed by Stereotactic Radiosurgery Boost in the Treatment of Patients With Brain Metastases"
+        },
+        "statusModule": {},
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 45
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00395070",
+          "briefTitle": "A Phase 3 Pivotal Trial Comparing Allovectin-7\u00ae Alone vs Chemotherapy Alone in Patients With Stage 3 or Stage 4 Melanoma"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2006-10"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 390
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05893654",
+          "briefTitle": "Melphalan Chemoreduction for Ocular Melanoma"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2021-05-01"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 10
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05180942",
+          "briefTitle": "Statins and prOgression of Coronary atheRosclerosis in melanomA Patients Treated With chEckpoint inhibitorS"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2022-11-07"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 130
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00707161",
+          "briefTitle": "Radiation Therapy and Concurrent Cisplatin Chemotherapy for Locally Advanced or Metastatic Malignant Melanoma"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2005-09"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 6
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01765569",
+          "briefTitle": "A Pharmacokinetics Study to Investigate the Effect of Vemurafenib on Digoxin in Patients With BRAFV600 Mutation-Positive Metastatic Melanoma"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2013-07"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 29
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02259231",
+          "briefTitle": "RTA 408 Capsules in Patients With Melanoma - REVEAL"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2014-10-31"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 41
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT07027488",
+          "briefTitle": "AB821 in Adult Participants With Locally Advanced or Metastatic Solid Tumors"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2025-08-05"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 50
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01607905",
+          "briefTitle": "Safety Study of KPT-330 (Selinexor) in Patients With Advanced or Metastatic Solid Tumor Cancer"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2012-06-18"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 192
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03239145",
+          "briefTitle": "Pembrolizumab (Anti-PD-1) and AMG386 (Angiopoietin-2 (Ang-2) in Patients With Advanced Solid Tumor"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2018-05-01"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 62
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00836342",
+          "briefTitle": "Correlation Between Skin Carotenoid Levels and Previous History of Skin Cancer"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2009-02"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 81
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01673854",
+          "briefTitle": "Phase II Safety Study of Vemurafenib Followed by Ipilimumab in Subjects With V600 BRAF Mutated Advanced Melanoma"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2012-09-13"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 70
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04930783",
+          "briefTitle": "NeoVax + CDX-301 and Nivolumab or Pembrolizumab in Melanoma"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2022-01-03"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 10
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03991741",
+          "briefTitle": "Adoptive Cell Transfer of Autologous Tumor Infiltrating Lymphocytes and High-Dose Interleukin 2 in Select Solid Tumors"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2020-10-07"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 3
+          }
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01191294",
+          "briefTitle": "Evaluation of a Simulation Training Tool to Identify Lesions Requiring Further Screening for Melanoma"
+        },
+        "statusModule": {
+          "startDateStruct": {
+            "date": "2010-07"
+          }
+        },
+        "designModule": {
+          "enrollmentInfo": {
+            "count": 270
+          }
+        }
+      }
+    }
+  ],
+  "nextPageToken": "ZVNj7o2Elu8o3lp3U8mh5unumpOQJJxubPak2vg"
+}

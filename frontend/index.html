@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cheiron — Clinical Trials Visualizer</title>
+<!-- CDN scripts only; no build step -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<!-- The 3D network graph loads via an ES-module block at the bottom of <body>
+     (3d-force-graph + three-spritetext sharing one pinned three via esm.sh). -->
+<style>
+  :root { --bg:#0f1220; --panel:#1a1e30; --ink:#e8ecf5; --muted:#9aa4bf; --accent:#6ea8fe; --line:#2a3050; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--ink); }
+  header { padding:16px 24px; border-bottom:1px solid var(--line); }
+  header h1 { margin:0; font-size:18px; font-weight:650; }
+  header p { margin:4px 0 0; color:var(--muted); font-size:13px; }
+  main { display:grid; grid-template-columns: 340px 1fr; gap:16px; padding:16px 24px; align-items:start; }
+  .panel { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:16px; }
+  label { display:block; font-size:12px; color:var(--muted); margin:10px 0 4px; }
+  input[type=text], textarea, input[type=number] {
+    width:100%; padding:8px 10px; background:#11152a; color:var(--ink);
+    border:1px solid var(--line); border-radius:6px; font-size:13px;
+  }
+  textarea { resize:vertical; min-height:64px; }
+  .row { display:flex; gap:8px; }
+  .row > div { flex:1; }
+  .check { display:flex; align-items:center; gap:8px; margin-top:12px; }
+  .check input { width:auto; }
+  button { margin-top:14px; width:100%; padding:10px; background:var(--accent); color:#08122b;
+    border:0; border-radius:8px; font-weight:650; font-size:14px; cursor:pointer; }
+  button:disabled { opacity:.6; cursor:default; }
+  #status { margin-top:10px; font-size:12px; color:var(--muted); min-height:16px; }
+  #chartWrap { position:relative; height:420px; }
+  #network3d { height:520px; border:1px solid var(--line); border-radius:8px; background:#0c1023; }
+  .hidden { display:none; }
+  .meta { margin-top:14px; font-size:12px; color:var(--muted); }
+  .meta b { color:var(--ink); font-weight:600; }
+  .tag { display:inline-block; background:#11162c; border:1px solid var(--line); border-radius:20px;
+    padding:2px 10px; margin:2px 4px 2px 0; font-size:11px; }
+  .cites { margin-top:14px; }
+  .cites h3 { font-size:13px; margin:0 0 8px; }
+  .cite { border-left:2px solid var(--accent); padding:6px 10px; margin:6px 0; background:#11162c; border-radius:0 6px 6px 0; }
+  .cite a { color:var(--accent); text-decoration:none; font-weight:600; }
+  .cite .field { color:var(--muted); font-size:11px; }
+  .cite .excerpt { font-size:13px; }
+  details { margin-top:12px; } summary { cursor:pointer; color:var(--muted); font-size:12px; }
+  pre { white-space:pre-wrap; font-size:11px; color:var(--muted); max-height:260px; overflow:auto; }
+  .empty { color:var(--muted); font-size:13px; padding:40px; text-align:center; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Cheiron</h1>
+  <p>Natural-language questions about clinical trials → live, cited visualizations from ClinicalTrials.gov.</p>
+</header>
+
+<main>
+  <!-- Query form -->
+  <form id="form" class="panel">
+    <label for="apiBase">API base URL</label>
+    <input type="text" id="apiBase" />
+
+    <label for="query">Question *</label>
+    <textarea id="query" placeholder="e.g. Show a sponsor-drug network for melanoma trials">How many melanoma trials are there in each phase?</textarea>
+
+    <div class="row">
+      <div><label for="condition">Condition</label><input type="text" id="condition" placeholder="melanoma" /></div>
+      <div><label for="drug_name">Drug</label><input type="text" id="drug_name" placeholder="pembrolizumab" /></div>
+    </div>
+    <div class="row">
+      <div><label for="sponsor">Sponsor</label><input type="text" id="sponsor" /></div>
+      <div><label for="country">Country</label><input type="text" id="country" /></div>
+    </div>
+    <label for="compare">Compare (comma-separated)</label>
+    <input type="text" id="compare" placeholder="pembrolizumab, nivolumab" />
+
+    <div class="check">
+      <input type="checkbox" id="include_citations" checked />
+      <label for="include_citations" style="margin:0;">Include citations</label>
+    </div>
+
+    <button type="submit" id="submit">Visualize</button>
+    <div id="status"></div>
+    <div class="cites" id="cites"></div>
+  </form>
+
+  <!-- Output -->
+  <section class="panel" id="output">
+    <div id="empty" class="empty">Run a query to see a visualization.</div>
+    <div id="viz" class="hidden">
+      <div id="chartWrap"><canvas id="chart"></canvas></div>
+      <div id="network3d" class="hidden"></div>
+      <div class="meta" id="meta"></div>
+      <details><summary>Raw response JSON</summary><pre id="raw"></pre></details>
+    </div>
+  </section>
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const PALETTE = ["#6ea8fe","#63d2a2","#f6c453","#ef7d7d","#b085f5","#4dd0e1","#f19edc","#a3be8c","#e0a458","#7aa2f7"];
+
+// Default API base: use the serving origin, or localhost when opened via file://
+$("apiBase").value = (location.protocol === "file:" || !location.origin || location.origin === "null")
+  ? "http://127.0.0.1:8000" : location.origin;
+
+let chart = null;    // Chart.js instance
+// The 3D network graph is owned by the ES-module block (window.CheironNetwork).
+
+$("form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const payload = { query: $("query").value.trim(), include_citations: $("include_citations").checked };
+  for (const f of ["condition","drug_name","sponsor","country"]) {
+    const v = $(f).value.trim(); if (v) payload[f] = v;
+  }
+  const cmp = $("compare").value.trim();
+  if (cmp) payload.compare = cmp.split(",").map(s => s.trim()).filter(Boolean);
+  if (!payload.query) return;
+
+  setStatus("Querying live ClinicalTrials.gov data…", false);
+  $("submit").disabled = true; $("cites").innerHTML = "";
+  try {
+    const res = await fetch($("apiBase").value.replace(/\/$/, "") + "/visualize", {
+      method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload),
+    });
+    const body = await res.json();
+    if (!res.ok) throw new Error(body.detail ? JSON.stringify(body.detail) : ("HTTP " + res.status));
+    render(body);
+    setStatus("", false);
+  } catch (err) {
+    setStatus("Error: " + err.message, true);
+  } finally {
+    $("submit").disabled = false;
+  }
+});
+
+function setStatus(msg, isError) {
+  const el = $("status"); el.textContent = msg; el.style.color = isError ? "#ef7d7d" : "var(--muted)";
+}
+
+function render(body) {
+  $("empty").classList.add("hidden");
+  $("viz").classList.remove("hidden");
+  $("raw").textContent = JSON.stringify(body, null, 2);
+  renderMeta(body.meta);
+  $("cites").innerHTML = "";
+
+  const viz = body.visualization;
+  const isNetwork = viz.type === "network_graph";
+  $("chartWrap").classList.toggle("hidden", isNetwork);
+  $("network3d").classList.toggle("hidden", !isNetwork);
+  destroyViews();
+
+  if (isNetwork) {
+    if (window.CheironNetwork) window.CheironNetwork.render(viz);
+    else setStatus("3D graph library still loading — try again in a moment.", true);
+  } else {
+    renderChart(viz);
+  }
+}
+
+function destroyViews() {
+  if (chart) { chart.destroy(); chart = null; }
+  if (window.CheironNetwork) window.CheironNetwork.destroy();
+}
+
+const CHART_TYPE = { bar_chart:"bar", grouped_bar_chart:"bar", histogram:"bar", time_series:"line", scatter_plot:"scatter" };
+
+function renderChart(viz) {
+  const rows = viz.data || [];
+  const enc = viz.encoding || {};
+  const type = CHART_TYPE[viz.type] || "bar";
+  const xKey = enc.x, yKey = enc.y, seriesKey = enc.series, colorKey = enc.color;
+  let datasets = [];
+
+  if (viz.type === "scatter_plot") {
+    // group points by color (e.g. phase)
+    const groups = new Map();
+    for (const r of rows) {
+      const g = (colorKey && r[colorKey]) || "trials";
+      if (!groups.has(g)) groups.set(g, []);
+      groups.get(g).push({ x: r[xKey], y: r[yKey], _row: r });
+    }
+    let i = 0;
+    for (const [g, pts] of groups) datasets.push({ label: g, data: pts, backgroundColor: PALETTE[i++ % PALETTE.length] });
+  } else if (seriesKey) {
+    // grouped/series: one dataset per series, aligned to category labels
+    const cats = uniquePreserve(rows.map(r => r[xKey]));
+    orderCategories(viz.type, cats);
+    const series = uniquePreserve(rows.map(r => r[seriesKey]));
+    series.forEach((s, i) => {
+      const byCat = new Map(rows.filter(r => r[seriesKey] === s).map(r => [String(r[xKey]), r]));
+      datasets.push({
+        label: s,
+        data: cats.map(c => { const r = byCat.get(String(c)); return r ? r[yKey] : 0; }),
+        _rows: cats.map(c => byCat.get(String(c)) || null),
+        backgroundColor: PALETTE[i % PALETTE.length],
+        borderColor: PALETTE[i % PALETTE.length], fill: false, tension: 0.25,
+      });
+    });
+    return draw(type, cats, datasets, viz);
+  } else {
+    const cats = rows.map(r => r[xKey]);
+    orderRowsIfTime(viz.type, rows, cats, xKey);
+    datasets.push({
+      label: yKey, data: rows.map(r => r[yKey]), _rows: rows.slice(),
+      backgroundColor: rows.map((_, i) => PALETTE[i % PALETTE.length]),
+      borderColor: PALETTE[0], fill: false, tension: 0.25,
+    });
+    return draw(type, cats, datasets, viz);
+  }
+  draw(type, null, datasets, viz);
+}
+
+function draw(type, labels, datasets, viz) {
+  const histogramy = viz.type === "histogram";
+  chart = new Chart($("chart"), {
+    type,
+    data: { labels, datasets },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      scales: {
+        x: histogramy ? { grid:{display:false}, offset:false } : {},
+        y: { beginAtZero: true, title: { display: !!viz.encoding.y, text: viz.encoding.y } },
+      },
+      plugins: {
+        legend: { display: datasets.length > 1 },
+        title: { display: true, text: viz.title, color: "#e8ecf5" },
+        tooltip: { callbacks: { afterBody: (items) => tooltipCites(items) } },
+      },
+      onClick: (evt, els) => { if (els.length) showRowCites(rowFor(els[0])); },
+      ...(histogramy ? { datasets: { bar: { categoryPercentage: 1, barPercentage: 1 } } } : {}),
+    },
+  });
+}
+
+function rowFor(el) {
+  const ds = chart.data.datasets[el.datasetIndex];
+  if (ds._rows) return ds._rows[el.index];
+  if (ds.data[el.index] && ds.data[el.index]._row) return ds.data[el.index]._row; // scatter
+  return null;
+}
+function tooltipCites(items) {
+  const it = items[0]; if (!it) return "";
+  const ds = chart.data.datasets[it.datasetIndex];
+  const row = ds._rows ? ds._rows[it.dataIndex] : (ds.data[it.dataIndex] && ds.data[it.dataIndex]._row);
+  if (!row) return "";
+  const n = row.citation_count ?? (row.citations ? row.citations.length : 0);
+  const lines = [`${n} supporting stud${n === 1 ? "y" : "ies"} — click to cite`];
+  return lines;
+}
+
+function orderCategories(type, cats) {
+  if (type === "time_series") cats.sort((a, b) => (+a || 0) - (+b || 0));
+}
+function orderRowsIfTime(type, rows, cats, xKey) {
+  if (type === "time_series") {
+    rows.sort((a, b) => (+a[xKey] || 0) - (+b[xKey] || 0));
+    cats.length = 0; rows.forEach(r => cats.push(r[xKey]));
+  }
+}
+function uniquePreserve(arr) { const seen = new Set(), out = []; for (const v of arr) { const k = String(v); if (!seen.has(k)) { seen.add(k); out.push(v); } } return out; }
+
+function showRowCites(row) {
+  if (!row) return;
+  const label = row.series ? `${labelOf(row)} · ${row.series}` : labelOf(row);
+  showCites(label, row.citations, row.citation_count);
+}
+function labelOf(row) {
+  for (const k of ["phase","bin","country","overall_status","study_type","intervention_type","lead_sponsor_class","lead_sponsor_name","start_year","nct_id"])
+    if (row[k] != null) return String(row[k]);
+  return "selection";
+}
+
+function showCites(title, cites, count) {
+  const el = $("cites");
+  const total = (count != null) ? count : (cites ? cites.length : 0);
+  let html = `<h3>${escapeHtml(title)} — ${total} supporting stud${total === 1 ? "y" : "ies"}</h3>`;
+  if (!cites || !cites.length) {
+    html += `<div class="cite"><div class="excerpt">No citations available for this selection.</div></div>`;
+  } else {
+    for (const c of cites) {
+      const url = "https://clinicaltrials.gov/study/" + encodeURIComponent(c.nct_id);
+      html += `<div class="cite">
+        <a href="${url}" target="_blank" rel="noopener">${escapeHtml(c.nct_id)}</a>
+        <span class="field">${escapeHtml(c.field)}</span>
+        <div class="excerpt">${escapeHtml(c.excerpt)}</div>
+      </div>`;
+    }
+    if (total > cites.length) html += `<div class="field">…and ${total - cites.length} more</div>`;
+  }
+  el.innerHTML = html;
+}
+
+function renderMeta(m) {
+  if (!m) { $("meta").innerHTML = ""; return; }
+  const parts = [];
+  parts.push(`<div><b>${m.total_matched}</b> studies matched`
+    + (m.truncated ? ` <span class="tag">truncated</span>` : "")
+    + (m.geo ? ` <span class="tag">geo</span>` : "") + `</div>`);
+  const flags = [];
+  if (m.missing_count != null) flags.push(`missing: ${m.missing_count}`);
+  if (m.skipped_count != null) flags.push(`skipped: ${m.skipped_count}`);
+  if (m.measure) flags.push(`measure: ${m.measure}${m.units ? " ("+m.units+")" : ""}`);
+  if (flags.length) parts.push(`<div>${flags.map(f => `<span class="tag">${escapeHtml(f)}</span>`).join("")}</div>`);
+  const filt = m.filters_applied ? Object.entries(m.filters_applied).map(([k,v]) => `${k}=${typeof v==="object"?JSON.stringify(v):v}`) : [];
+  if (filt.length) parts.push(`<div style="margin-top:6px;"><b>Filters:</b> ${filt.map(f=>`<span class="tag">${escapeHtml(f)}</span>`).join("")}</div>`);
+  if (m.assumptions && m.assumptions.length) parts.push(`<div style="margin-top:6px;"><b>Assumptions:</b> ${m.assumptions.map(escapeHtml).join("; ")}</div>`);
+  parts.push(`<div style="margin-top:6px;">${escapeHtml(m.source||"")}${m.data_timestamp ? " · data "+escapeHtml(m.data_timestamp) : ""}</div>`);
+  $("meta").innerHTML = parts.join("");
+}
+
+function escapeHtml(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;" }[c])); }
+</script>
+
+<!-- 3D network graph: ES module so 3d-force-graph and three-spritetext share ONE
+     pinned three instance (labels render correctly; no global/version clashes). -->
+<script type="module">
+  import ForceGraph3D from "https://esm.sh/3d-force-graph@1.80.0?deps=three@0.179.1";
+  import SpriteText from "https://esm.sh/three-spritetext@1.10.0?deps=three@0.179.1";
+
+  const GROUP_COLORS = { sponsor: "#f6c453", drug: "#6ea8fe", condition: "#63d2a2" };
+  const container = () => document.getElementById("network3d");
+  let graph3d = null;
+
+  function destroy() {
+    if (graph3d) { try { graph3d._destructor && graph3d._destructor(); } catch (e) {} graph3d = null; }
+    const el = container(); if (el) el.innerHTML = "";
+  }
+
+  function render(viz) {
+    const el = container();
+    el.innerHTML = "";
+    const nodes = (viz.nodes || []).map(n => ({
+      id: n.id, type: n.type, val: n.trial_count, _cites: n.citations, _count: n.citation_count,
+    }));
+    const links = (viz.edges || []).map(e => ({
+      source: e.source, target: e.target, weight: e.weight, _cites: e.citations, _count: e.citation_count,
+    }));
+    const endId = (v) => (v && v.id != null) ? v.id : v;  // links carry node objects after layout
+    graph3d = ForceGraph3D()(el)
+      .width(el.clientWidth || 800).height(520)
+      .backgroundColor("#0c1023")
+      .graphData({ nodes, links })
+      .nodeLabel(n => `${n.type}: ${n.id} — ${n.val} trials`)
+      .nodeVal(n => Math.max(1, Math.sqrt(n.val)))
+      .nodeColor(n => GROUP_COLORS[n.type] || "#9aa4bf")
+      .nodeOpacity(0.9)
+      // Persistent name label on every node (a text sprite floated above the dot).
+      .nodeThreeObjectExtend(true)
+      .nodeThreeObject(n => {
+        const sprite = new SpriteText(n.id);
+        sprite.color = "#e8ecf5";
+        sprite.textHeight = 3;
+        sprite.backgroundColor = "rgba(12,16,35,0.55)";
+        sprite.padding = 1.5;
+        sprite.position.y = 5 + Math.sqrt(n.val);  // float the name above the node
+        return sprite;
+      })
+      .linkWidth(l => Math.max(1, Math.sqrt(l.weight)))
+      .linkColor(() => "#3a4260")
+      .linkLabel(l => `${endId(l.source)} — ${endId(l.target)}: ${l.weight}`)
+      .onNodeClick(n => window.showCites && window.showCites(`${n.type}: ${n.id}`, n._cites, n._count))
+      .onLinkClick(l => window.showCites && window.showCites(`${endId(l.source)} — ${endId(l.target)}`, l._cites, l._count));
+  }
+
+  window.CheironNetwork = { render, destroy };
+</script>
+</body>
+</html>

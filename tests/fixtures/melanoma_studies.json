@@ -1,0 +1,716 @@
+{
+  "totalCount": 3734,
+  "studies": [
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01278940",
+          "briefTitle": "Trial of Vaccine Therapy With mRNA- Transfected Dendritic Cells in Patients With Advanced Malignant Melanoma"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Oslo University Hospital"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Malignant Melanoma"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Dendritic Cells (DC) malignant melanoma"
+            },
+            {
+              "name": "IL-2"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01864759",
+          "briefTitle": "Phase I Endovenous Administration of Oncolytic Adenovirus ICOVIR-5 in Patients With Advanced or Metastatic Melanoma"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Institut Catal\u00e0 d'Oncologia"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Locally Advanced or Metastatic Melanoma"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "ICOVIR-5"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01216696",
+          "briefTitle": "Ipilimumab in Patients With Advanced Melanoma and Spontaneous Preexisting Immune Response to NY-ESO-1"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "National Center for Tumor Diseases, Heidelberg"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Metastatic Melanoma"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "ipilimumab"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT07504796",
+          "briefTitle": "ctDNA-guided Addition of Ipilimumab to Patients Receiving Nivolumab and Relatlimab"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "NYU Langone Health"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Metastatic Melanoma",
+            "Advanced Melanoma"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Nivolumab"
+            },
+            {
+              "name": "Relatlimab"
+            },
+            {
+              "name": "Ipilimumab"
+            },
+            {
+              "name": "Signatera genome MRD assay"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01970527",
+          "briefTitle": "Phase II Trial of Stereotactic Body Radiotherapy Followed by Ipilimumab in Treating Patients With Stage IV Melanoma"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "University of Washington"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Recurrent Melanoma",
+            "Stage IV Skin Melanoma"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Ipilimumab"
+            },
+            {
+              "name": "Laboratory Biomarker Analysis"
+            },
+            {
+              "name": "Pharmacological Study"
+            },
+            {
+              "name": "Stereotactic Body Radiation Therapy"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06863870",
+          "briefTitle": "Assessment of Circulating Tumor Cells and microRNAs in Patients With Metastatic Non-cutaneous Melanoma"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "IRCCS Azienda Ospedaliero-Universitaria di Bologna"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Melanoma Neoplasms"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03092453",
+          "briefTitle": "Dendritic Cell Vaccination in Patients With Advanced Melanoma"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "University of Pennsylvania"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Melanoma"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Mature dendritic cell (DC) vaccine"
+            },
+            {
+              "name": "Cyclophosphamide 300mg/m^2"
+            },
+            {
+              "name": "Pembrolizumab"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00722228",
+          "briefTitle": "Autologous and Allogeneic Whole Cell Cancer Vaccine for Metastatic Tumors"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Hadassah Medical Organization"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Colorectal Cancer",
+            "Ovarian Cancer",
+            "Gastric Cancer",
+            "Breast Cancer",
+            "Lung Cancer",
+            "Kidney Cancer",
+            "Melanoma"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Autologous or Allogeneic tumor cells"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00685750",
+          "briefTitle": "Expression Analysis of Specific Markers in Non-small Cell Lung Cancer or Melanoma"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "GlaxoSmithKline"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Lung Cancer, Non-Small Cell"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Collection of tumor and blood samples"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03237013",
+          "briefTitle": "Strategies to Promote Skin Health"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "San Diego State University"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Skin Cancer",
+            "Skin Cancer Melanoma",
+            "Squamous Cell Carcinoma",
+            "Basal Cell Carcinoma"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Facial Morphing Intervention"
+            },
+            {
+              "name": "Mindfulness Intervention"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00121420",
+          "briefTitle": "Study of Motexafin Gadolinium With Whole Brain Radiation Therapy Followed by Stereotactic Radiosurgery Boost in the Treatment of Patients With Brain Metastases"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Pharmacyclics LLC."
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Neoplasm Metastasis",
+            "Brain Neoplasms"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Motexafin gadolinium"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00395070",
+          "briefTitle": "A Phase 3 Pivotal Trial Comparing Allovectin-7\u00ae Alone vs Chemotherapy Alone in Patients With Stage 3 or Stage 4 Melanoma"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Vical"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Metastatic Melanoma"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Allovectin-7\u00ae"
+            },
+            {
+              "name": "Dacarbazine (DTIC)"
+            },
+            {
+              "name": "Temozolomide (TMZ)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05893654",
+          "briefTitle": "Melphalan Chemoreduction for Ocular Melanoma"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Hospital das Cl\u00ednicas de Ribeir\u00e3o Preto"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Uveal Melanoma"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Melphalan Injection"
+            },
+            {
+              "name": "Plaque brachytherapy"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05180942",
+          "briefTitle": "Statins and prOgression of Coronary atheRosclerosis in melanomA Patients Treated With chEckpoint inhibitorS"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Monash University"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Melanoma",
+            "Atherosclerosis"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00707161",
+          "briefTitle": "Radiation Therapy and Concurrent Cisplatin Chemotherapy for Locally Advanced or Metastatic Malignant Melanoma"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "University of Utah"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Cancer",
+            "Melanoma"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Radiation Therapy"
+            },
+            {
+              "name": "Cisplatin"
+            },
+            {
+              "name": "Surgical resection"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01765569",
+          "briefTitle": "A Pharmacokinetics Study to Investigate the Effect of Vemurafenib on Digoxin in Patients With BRAFV600 Mutation-Positive Metastatic Melanoma"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Hoffmann-La Roche"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Malignant Melanoma, Neoplasms"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Digoxin"
+            },
+            {
+              "name": "Vemurafenib"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02259231",
+          "briefTitle": "RTA 408 Capsules in Patients With Melanoma - REVEAL"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Biogen"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Melanoma",
+            "Unresectable (Stage III) Melanoma",
+            "Metastatic (Stage IV) Melanoma"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Omaveloxolone Capsules (2.5 mg/capsule)"
+            },
+            {
+              "name": "Ipilimumab (3 mg/kg)"
+            },
+            {
+              "name": "Nivolumab (240 mg)"
+            },
+            {
+              "name": "Omaveloxolone Capsules (10 mg/capsule)"
+            },
+            {
+              "name": "Omaveloxolone Capsules (50 mg/capsule)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT07027488",
+          "briefTitle": "AB821 in Adult Participants With Locally Advanced or Metastatic Solid Tumors"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Yale University"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Advanced Melanoma and Normal or Impaired",
+            "Advanced Melanoma"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "AB821"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01607905",
+          "briefTitle": "Safety Study of KPT-330 (Selinexor) in Patients With Advanced or Metastatic Solid Tumor Cancer"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Karyopharm Therapeutics Inc"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Solid Tumor"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Selinexor"
+            },
+            {
+              "name": "Acetaminophen"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03239145",
+          "briefTitle": "Pembrolizumab (Anti-PD-1) and AMG386 (Angiopoietin-2 (Ang-2) in Patients With Advanced Solid Tumor"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Dana-Farber Cancer Institute"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Advanced Solid Tumor"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Pembrolizumab"
+            },
+            {
+              "name": "Trebananib"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00836342",
+          "briefTitle": "Correlation Between Skin Carotenoid Levels and Previous History of Skin Cancer"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Massachusetts General Hospital"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Skin Cancer",
+            "Basal Cell Carcinoma",
+            "Squamous Cell Carcinoma"
+          ]
+        },
+        "armsInterventionsModule": {}
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01673854",
+          "briefTitle": "Phase II Safety Study of Vemurafenib Followed by Ipilimumab in Subjects With V600 BRAF Mutated Advanced Melanoma"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Bristol-Myers Squibb"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Melanoma"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Ipilimumab"
+            },
+            {
+              "name": "Vemurafenib"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04930783",
+          "briefTitle": "NeoVax + CDX-301 and Nivolumab or Pembrolizumab in Melanoma"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Dana-Farber Cancer Institute"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Melanoma",
+            "Metastatic Melanoma"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "CDX-301"
+            },
+            {
+              "name": "NEOVAX"
+            },
+            {
+              "name": "Nivolumab"
+            },
+            {
+              "name": "Pembrolizumab"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03991741",
+          "briefTitle": "Adoptive Cell Transfer of Autologous Tumor Infiltrating Lymphocytes and High-Dose Interleukin 2 in Select Solid Tumors"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Gregory Daniels"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Metastatic Melanoma",
+            "Locally Advanced Refractory/Recurrent Melanoma",
+            "Metastatic Head and Neck Cancer",
+            "Locally Advanced Refractory/Recurrent Head and Neck Cancer"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Autologous Tumor Infiltrating Lymphocytes"
+            },
+            {
+              "name": "High-Dose Interleukin 2"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT01191294",
+          "briefTitle": "Evaluation of a Simulation Training Tool to Identify Lesions Requiring Further Screening for Melanoma"
+        },
+        "sponsorCollaboratorsModule": {
+          "leadSponsor": {
+            "name": "Northwestern University"
+          }
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Skin Simulation Model",
+            "Mastery Learning Model to Simulation Training for Visual Screening for Melanoma and Skin Biopsy"
+          ]
+        },
+        "armsInterventionsModule": {
+          "interventions": [
+            {
+              "name": "Simulation teaching session"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "nextPageToken": "ZVNj7o2Elu8o3lp3U8mh5unumpOQJJxubPak2vg"
+}

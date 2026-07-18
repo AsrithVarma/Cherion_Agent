@@ -1,0 +1,263 @@
+{
+  "totalCount": 2904,
+  "studies": [
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04209660",
+          "briefTitle": "Lenvatinib and Pembrolizumab in People With Advanced Adenoid Cystic Carcinoma and Other Salivary Gland Cancers"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04060342",
+          "briefTitle": "GB1275 Monotherapy and in Combination With an Anti-PD1 Antibody in Patients With Specified Advanced Solid Tumors or in Combination With Standard of Care in Patients With Metastatic Pancreatic Adenocarcinoma"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02736266",
+          "briefTitle": "Neoadjuvant Pembrolizumab for Muscle-invasive Urothelial Bladder Carcinoma"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03092453",
+          "briefTitle": "Dendritic Cell Vaccination in Patients With Advanced Melanoma"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06669572",
+          "briefTitle": "Lenvatinib and Pembrolizumab to Treat Patients With Anal or Rectum Cancer That Has Gotten Worse After Initial Treatment"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05355051",
+          "briefTitle": "A Phase II Study of the Combination of Azacitidine and Pembrolizumab for Patients Relapsed/Refractory Hodgkin's Lymphoma"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03239145",
+          "briefTitle": "Pembrolizumab (Anti-PD-1) and AMG386 (Angiopoietin-2 (Ang-2) in Patients With Advanced Solid Tumor"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05194072",
+          "briefTitle": "A Study of Felmetatug Vedotin/SGN-B7H4V in Advanced Solid Tumors"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02883556",
+          "briefTitle": "Study of Pembrolizumab as First Line Therapy in Patients With Unresectable Squamous Cell Carcinoma of the Skin"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT06388031",
+          "briefTitle": "ICI Rechallenge for Advanced NSCLC With Long-Term Response to First-Line ICI"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04930783",
+          "briefTitle": "NeoVax + CDX-301 and Nivolumab or Pembrolizumab in Melanoma"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03760575",
+          "briefTitle": "Pembrolizumab in Combination With Chemotherapy and Image-Guided Surgery for Malignant Pleural Mesothelioma (MPM)"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02489695",
+          "briefTitle": "Axitinib in1st Line Treatment for Patients With Advanced or Metastatic Papillary Renal Cell Carcinoma"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04936841",
+          "briefTitle": "Bempegaldesleukin (NKTR-214) With Radiation and Anti-PD-1 Immunotherapy for Head and Neck Squamous Cell Carcinoma"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT07661251",
+          "briefTitle": "ITTACA (Immunotherapy Time Teller for Advanced Lung Cancer)"
+        },
+        "designModule": {}
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03150329",
+          "briefTitle": "Pembrolizumab and Vorinostat in Patients With Relapsed or Refractory DLBCL, FCL or HL."
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05177796",
+          "briefTitle": "Panitumumab and Pembrolizumab in Combination With Neoadjuvant Chemotherapy for the Treatment of Stage III-IV Triple Negative Breast Cancer"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03428802",
+          "briefTitle": "Pembrolizumab in Treating Participants With Metastatic, Recurrent or Locally Advanced Cancer and Genomic Instability"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT03523702",
+          "briefTitle": "The Selective Personalized Radio-Immunotherapy for Locally Advanced NSCLC Trial"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02331251",
+          "briefTitle": "Study of Pembrolizumab Plus Chemotherapy in Patients With Advanced Cancer (PembroPlus)"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        }
+      }
+    }
+  ],
+  "nextPageToken": "ZVNj7o2Elu8o3lp3U8mh5unumpOQJJxsZ_Cm2_g"
+}
